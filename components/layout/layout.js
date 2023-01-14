@@ -1,9 +1,15 @@
+import Footer from './footer'
+
 export default function Layout({ children }) {
-    return (
+    return (<>
         <div className="h-screen lg:flex flex-wrap justify-between">
             <main className="flex-1">
-                {children}
+               {children}
             </main>
         </div>
+        <div>
+            <Footer/>
+        </div>
+    </>
     );
 }
